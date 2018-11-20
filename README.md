@@ -16,6 +16,11 @@ npm install generate-elm-app
 
 ```
 generate-elm-app
+```
+
+type the name for your project folder and then 
+
+```
 cd project-name
 npm start
 ``` 
