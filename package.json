@@ -1,15 +1,19 @@
 {
   "name": "generate-elm-app",
   "version": "1.0.5",
-  "description": "",
+  "description": "Simple setup for elm application",
   "main": "index.js",
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/wellyal/generate-elm-app"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
     "generate-elm-app": "./index.js"
   },
-  "author": "",
+  "author": "Wellyngton Amaral",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.2.0",
