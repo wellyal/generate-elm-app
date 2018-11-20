@@ -14,5 +14,7 @@ npm install generate-elm-app
 
 ```
 generate-elm-app
+cd project-name
+npm start
 ``` 
 
