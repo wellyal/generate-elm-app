@@ -2,6 +2,8 @@
 
 Simple setup for elm application
 
+![](https://media.giphy.com/media/1qXIbJzXQphgyJVKiq/giphy.gif)
+
 ### Installing
 
 Install generate-elm-app by just running
