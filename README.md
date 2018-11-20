@@ -1,4 +1,4 @@
-# Project Title
+# Generate Elm App
 
 Simple setup for elm application
 
