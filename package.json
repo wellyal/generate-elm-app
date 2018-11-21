@@ -1,6 +1,6 @@
 {
   "name": "generate-elm-app",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simple setup for elm application",
   "main": "index.js",
   "repository": {
