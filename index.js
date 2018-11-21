@@ -24,19 +24,17 @@ function createDirectoryContents (newTemplatePath, newProjectPath) {
 
   filesToCreate.forEach(file => {
     const origFilePath = `${newTemplatePath}/${file}`;
-    
-    // get stats about the current file
     const stats = fs.statSync(origFilePath);
 
     if (stats.isFile()) {
-      const contents = fs.readFileSync(origFilePath, 'utf8');
-      
+      const encode = origFilePath.includes('png') ? 'binary' : 'utf8'
+      const contents = fs.readFileSync(origFilePath, encode);
       const writePath = `${CURR_DIR}/${newProjectPath}/${file}`;
-      fs.writeFileSync(writePath, contents, 'utf8');
+
+      fs.writeFileSync(writePath, contents, encode);
     } else if (stats.isDirectory()) {
       fs.mkdirSync(`${CURR_DIR}/${newProjectPath}/${file}`);
       
-      // recursive call
       createDirectoryContents(`${newTemplatePath}/${file}`, `${newProjectPath}/${file}`);
     }
   });

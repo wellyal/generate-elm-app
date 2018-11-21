@@ -1,13 +1,9 @@
-'use strict';
-
-import 'ace-css/css/ace.css';
-import 'font-awesome/css/font-awesome.css';
 import './../public/index.html';
+import { Elm } from './Main.elm';
 
-const Elm = require('./Main.elm');
 const mountNode = document.getElementById('main');
 
-const app = Elm.Elm.Main.init({
+const app = Elm.Main.init({
 	node: mountNode,
 	flags: {},
 });
